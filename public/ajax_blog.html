@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>BLOG</title>
+    <style>
+    body {
+        background-color: grey;
+        color: orange;
+    }
+
+    </style>
+ <script>
+    // <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <link href="/css/bootstrap.css"  rel="stylesheet">
+</script>
+
+</head>
+<body>
+
+    <h1><a href="#" id="turnon_off">My Blog Post</a></h1>
+    <div id = 'insertPost'> </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+
+
+<script>
+(function() {
+    var blog = $.get('/data/blog.json');
+    blog.done(function(data){
+        console.log(data);
+
+        var post = $('#insertPost');
+
+        var htmlString = '';
+
+        $(data).each(function(index, element){
+            htmlString += '<p>';
+            htmlString += '<p>' + element.title + '</p>';
+            htmlString += '<pre>' + element.date + '</pre>';
+            htmlString += '<p>' + element.content + '</p>';
+            htmlString += '<p>' + element.categories + '</p>';
+            htmlString += '</p>';
+            console.log(index,element);
+        });
+        post.html(htmlString);
+        
+    });
+   
+})();
+
+    $('h1').click(function(){
+        $('h1').toggle();
+        $('#insertPost').click(function(){
+        $('#insertPost').toggle();
+        });
+    });
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+</body>
+</html>

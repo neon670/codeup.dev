@@ -1,0 +1,82 @@
+<html>
+<head>
+	<title>Calculator</title>
+</head>
+<body>
+	<style>
+	.contanier {
+    	width: 225px;
+    	height: 200px;
+    	border: clear;
+    	position: relative;
+    }
+
+      button {
+ 		width: 25px;
+ 		height: 25px;
+ 		border: 1px solid black;
+  		color: black;
+ 		font-weight: bold;
+/* 		float: left;
+*/ 		margin-right: 20px;
+ 		margin-top: 10px;
+ 		margin-bottom: 5px;
+ 		padding: 10px;
+	/*	background-color: grey;
+*/
+ 	}
+ 	#calculator {
+ 		width: 180px;
+ 		height: 50px;
+
+ 	} 
+ 	/*#zero {
+ 		width: 50px;
+ 	}*/
+
+	</style>
+	
+    <div id="allrows">
+    <div>
+    	<button id="calculator" class="box"></button>
+    </div>
+    <div class= row>
+		<button class= "button" id="btnseven" value=7>7</button>
+		
+		<button class= "button" id="btneight" value=8>8</button>
+
+		<button class= "button" id="btnnine" value=9>9</dbutton>
+				
+		<button class= "button" id="btntimes" value=*>*</button>
+	</div>
+	<div class= row>
+		<button class= "button" id="btnfour" value=4>4</dbutton>
+	
+		<button class= "button" id="btnfive" value=5>5</button>
+		
+		<button class= "button" id="btnsix" value=6>6</button>
+		
+		<button class= "button" id="btnplus" value=+>+</button>
+	</div>
+	<div class= row>
+		<button class= "button" id="btnone" value=1>1</button>
+			
+		<button class= "button" id="btntwo" value=2>2</button>
+	
+		<button class= "button" id="btnthree" value=3>3</button>
+
+		<button class= "button" id="btnminus" value=->-</button>
+	</div>
+	<div class= row>	
+		<button class= "button" id="btnclear" value=C>C</button>
+
+		<button class= "button" id="btnzero" value=0>0</button>
+		
+		<button class= "button" id="btnequals" value= =>=</button>
+
+		<button class= "button" id="btndivide" value= />/</button>
+	</div>
+</div>
+<script src= "js/calculator.js"></script>
+</body>
+</html>

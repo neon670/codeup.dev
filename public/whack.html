@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title>Mole</title>
+	<script src="/js/jquery.js"></script>
+	<style>
+	img {
+		display: none
+
+	}
+	</style>
+</head>
+<body>
+	<h1>Click the mole<h1>
+<img src="/img/mole.jpg">
+<img src="/img/mole.jpg">
+<img src="/img/mole.jpg">
+<img src="/img/mole.jpg">
+
+<script>
+	$('img').fadeIn(5000);
+	$('img').click(function(){
+		$(this).fadeOut();
+	});
+</script>
+</body>
+</html>

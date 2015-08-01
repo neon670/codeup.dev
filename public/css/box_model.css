@@ -1,0 +1,45 @@
+div{
+	border: 1px solid black;
+	width: 50px;
+	height: 50px;
+	padding: 10px;
+	margin: 50px 50px;
+	color: white;
+	font-weight: bold;
+   }
+ h3{
+ 	text-decoration: underline;
+
+ }
+
+#redbox{
+	background-color:#d84231;
+	
+
+}
+#orangebox{
+	background-color: #eaae33;
+	margin-left: 30px;
+	
+
+}
+#yellowbox{
+	background-color: #fcf733;
+	margin-left: 60px;
+	
+}
+#greenbox{
+	background-color: #578c05;
+	margin-left: 90px;
+	
+}
+#bluebox{
+	background-color: #234afb;
+	margin-left: 120px;
+	
+}
+#purplebox{
+	background-color: #df8bf0;
+	margin-left: 150px;
+	
+}

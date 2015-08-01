@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<title>Modernizr - JavaScript Example</title>
+ 
+	<script src="path/to/modernizr.js"></script>
+</head>
+<body>
+	<p id="result"></p>
+ 
+	<script>
+		elem = document.getElementById('result');
+		if ( Modernizr.websockets ) {
+			elem.innerHTML = 'Your browser supports WebSockets.';
+		} else {
+			elem.innerHTML ='Your browser does not support WebSockets.';
+		}
+	</script>
+</body>
+</html>

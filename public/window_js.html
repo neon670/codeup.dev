@@ -1,0 +1,67 @@
+<!-- <html>
+<head>
+    <title>Exampe jQuery Page</title>
+    <script src="/js/jquery.js"></script>
+    <script>
+        $('document').ready(function() {
+            $('#textfield').keyup(function() {
+                alert('.keypress() event fired');
+            });
+        });
+    </script>
+</head>
+<body>
+    <p>Please type something into this form: </p>
+    <form>
+        <input type="text" id="textfield" name="textfield" placeholder="Type Here"/>
+    </form>
+</body>
+</html>
+<p>Lets add an item by clicking below</p>
+<p><a id ="clickable" href="#">Add item by clicking</a></p>
+<div id="insertContent"></div>
+<script> src=""
+</script> -->
+<html>
+<head>
+    <title>NOE</title>
+     <script src="/js/jquery.js"></script>
+</head>
+<body>
+<h1 id="noe"></h1>
+
+<script>
+var count=0;
+var myName=['noe'];
+keyCode=''
+//110,111,101
+
+$(document).keypress(function (event){
+    console.log(event.keyCode);
+   if (event.KeyCode == myName[count]) {
+    console.log('good job, thats my name')
+    count++;
+    }else{
+        console.log('wrong')
+    }
+    if(myName.length == count){
+        $('#noe').html('NOE');
+        console.log('yea buddy!');     
+    }
+   
+    // alert(myName);
+   
+});
+// {
+       // $('h1').html(function()
+   // }
+    // $(document)
+    //grab the sequence of keys
+    //when the match your name attach that name to the h1 tag above
+    //alert name
+    //create this sequence and alert('you have an additional 30 lives')
+    //up,up,down,left,right,left,right,b,a,b,a, enter
+
+</script>
+</body>
+</html>

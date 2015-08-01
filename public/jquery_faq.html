@@ -1,0 +1,123 @@
+<!-- <html>
+<head>
+    <title>Exampe jQuery Page</title>
+    <style>
+        .centered {
+            text-align: center;
+        }
+        .highlighted {
+            background-color: #FF0;
+        }
+    </style>
+    <script src="/js/jquery.js"></script>
+    <script>
+        $('document').ready(function() {
+            $('#highlight-important').click(function(event) {
+                event.preventDefault();
+                $('.important').addClass('highlighted');
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Example Page</h1>
+    <div class="centered important">
+        <h3>NOTICE</h3>
+        <p>This is an important message!</p>
+    </div>
+    <div class="not-important">
+        <h2>Lorem Ipsum</h2>
+        <p>Lorem ipsum dolor sit amet, incididunt ut <span class="important">labore et dolore magna aliqua.</span>, quis ut aliquip ex ea commodo.</p>
+    </div>
+    <p class="centered important">This is also very important.</p>
+    <a href="#" id="highlight-important">Click to highlight important text.</a>
+</body>
+</html> -->
+
+<html>
+<head>
+	<title>FAQ</title>
+	 <script src="/js/jquery.js"></script>
+
+	 <style>
+	.invisible {
+		display: none;
+	}
+	dt {
+		font-weight: bold 
+	}
+	</style>
+</head>
+<body>
+	<h1>Frequently Asked Question</h1>
+	<h3>Yellowstone</h3>
+	<ul>
+		<li>Old Faithful</li>
+		<li>World's First National Park</li>
+		<li>2,221,766 acres or 898,317 hectares</li>
+		<li>Highest Point: 11,358 ft / 3,462 m (Eagle Peak)</li>
+	</ul>
+	<h3>Everglades</h3>
+	<ul>
+		<li>734 sq miles (1,900 km²)</li>
+		<li>fun fact</li>
+		<li>another fun fact</li>
+		<li>yet antoher fun fact</li>
+	</ul>
+	<dl>
+		<dt>When does Old Faithful erupt?</dt>
+		<br>
+		<dd class="invisible">Basic prediction of Old Faithful is dependent upon the duration of the previous eruption. During visitor center hours, geyser statistics and predictions are maintained by the naturalist staff. People speak of the average time between eruptions. This is misleading. Intervals can range from 60-110 minutes. Visitors can check for posted prediction times in most buildings in the Old Faithful area.</dd>
+		<br>
+		<dt>How high does Old Faithful erupt and how long will it last?</dt>
+		<br>
+		<dd class="invisible">Old Faithful can vary in height from 106-184 feet (32–56 m) with an average near 130 feet (40 m). This has been the historical range of its recorded height. Eruptions normally last between 1.5 to 5 minutes.</dd>
+		<br>
+		<dt> I heard Old Faithful isn't as faithful as it used to be. Is it slowing down?</dt>
+		<br>
+		<dd class="invisible">It depends on what you call faithful. The famous geyser currently erupts around 17 times a day and can be predicted with a 90 percent confidence rate within a 10 minute variation. Because of changes in circulation that resulted from the 1959 Hebgen Lake and 1983 Borah Peak earthquakes, as well as other local and smaller earthquakes, the average interval between eruptions has been lengthening during the last several decades. In the past, Old Faithful displayed two eruptive modes: short duration eruptions followed by a short interval, and a long duration eruption followed by a long interval. However, after a local earthquake in 1998, Old Faithful’s eruptions are more often of the long duration, long interval type. If an eruption lasts less than 2.5 minutes then there will be a 60 minute interval. If an eruption lasts more than 2.5 minutes, there will be a 90 minute interval.</dd>
+		<br>
+		<dt>How many gallons of water are expelled during an eruption?</dt>
+		<br>
+		<dd class="invisible">It depends on the duration of the eruption. Scientists estimate that the amount ranges from 3,700 gallons (for a short duration of 1.5 minutes) to 8,400 gallons (for a longer duration of 4.5 minutes).</dd>
+		<br>
+		<dt>How hot is the water in Old Faithful?</dt>
+		<br>
+		<dd class="invisible">During an eruption, the water temperature at the vent has been measured at 204°F (95.6C). The steam temperature has been measured above 350°</dd>
+		<br>
+		<dt>Did glaciers ever cover Yellowstone? </dt>
+		<br>
+		<dd class="invisible">Yes, Yellowstone has experienced glaciers many times. There is physical evidence of the last two major Rocky Mountain glaciations: Bull Lake and Pinedale. Limited evidence exists for pre-Bull Lake glaciations. Most of the Yellowstone Plateau was ice free by 14,000 to 13,000 years ago. Scientists estimate that 18,000 years ago most of the park was under 4,000 feet of ice. During this glacial time, called the Pinedale, ice flowed from high elevations to the low elevation volcanic plateau and an ice cap formed</dd>
+		<br>
+		<dt>Is Yellowstone a volcano?</dt>
+		<br>
+		<dd class="invisible">Yes. Within the past two million years, episodic volcanic eruptions have occurred in the Yellowstone area—three of them major</dd>
+		<br>
+		<dt>What is the caldera shown on the park map? </dt>
+		<br>
+		<dd class="invisible">The Yellowstone Caldera was created by a massive volcanic eruption approximately 640,000 years ago. Subsequent lava flows filled in much of the caldera, and it is now measured at 30 x 45 miles. Its rim can best be seen from the Washburn Hot Springs overlook, south of Dunraven Pass. Gibbon Falls, Lewis Falls, Lake Butte, and Flat Mountain Arm of Yellowstone Lake are part of the rim</dd>
+
+		<p></p>
+    <a href="#" id="turnon_off">Click to show definition.</a>
+
+     <script>
+        $('document').ready(function() {
+            $('#turnon_off').click(function(event) {
+                event.preventDefault();
+                $('dd').toggleClass('invisible');
+                console.log(event);
+                });
+            $('ul').each(function(index){
+            	$(this).children().first().css('font-weight', 'bold');
+            });
+
+            $('li').click(function(event){
+            	$(this).parent().addClass('invisible');
+            });
+            $('h3').click(function(){
+    		$('h3').fadeOut('fast')
+    	});
+    });
+    </script>
+</body>
+</html>

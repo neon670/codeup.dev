@@ -1,0 +1,118 @@
+
+for (var i =2; i<=100; i+=2){
+	console.log( "this is an even number" +i);
+}
+
+
+for (var i =3; i<=100; i++ ){
+	console.log("should be 3" +i);
+}
+
+var i = 3; 
+while (i<100){
+	conslole.log(loop + !);
+	i++
+}
+var i = 1;
+
+do {
+    console.log('while loop iteration #' + i);
+    i++;
+} while (i < 100);
+
+(while loops) var i =1;
+while (i<=100){
+	if (i % 2 == 0){
+	console.log(i);
+	}
+	i++;
+
+}
+
+var i =1;
+while (i<100){
+	if(i % 3 == 0){
+	console.log('Fizz');
+}else{
+	console.log(i);
+	 }
+	i++
+}
+
+var i =1;
+while (i<100){
+	if(i % 3 == 0){
+	console.log('Fizz');
+} else if(i % 5 == 0){
+console.log('Buzz');
+} else {
+	console.log(i);
+	 }
+	i++;
+}
+
+
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script>
+	for (var i = 1; i < 100; i++) {
+
+    if (i % 2 !== 0) {
+        // number isn't even
+        // odd numbers aren't as cool
+        // skip the rest of the loop and continue with the next iteration
+        continue;
+    }
+
+    console.log('Here is a lovely even number: ' + i);
+}
+</script>
+</body>
+</html>
+
+function doSomething ()
+{
+	<!-- //code goes here -->
+}
+doSomething();
+
+
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script> 
+	function areaOfRetangle(l, w)
+	{ 
+		return l * w;
+	}
+	function areaOfTriangle(b, h)
+	{
+		return (b * h) /2;
+	}
+	var rectangle = areaOfRetangle(10, 5);
+	console.log(rectangle);
+
+	function areaOfWeirdShape()
+	{
+			var area = areaOfRetangle(10, 5) - areaOfTriangle(5, 7);
+			console.log(area);
+	}
+
+</script>
+</body>
+</html>
+
+function getNameFromUser() {
+	return prompt ('Input your name.');
+}
+function sayHello() {
+	var name = getNameFromUser();
+	var message = "Howdy, " + name; 
+	return message;
+}
+console.log(sayHello());

@@ -1,0 +1,39 @@
+loop from 1-10
+check for multipes of 3
+check for multipes of 5
+sum all multiplies
+var sum =0;
+for(var i=1; i<10; i++){
+	if (i % 3 == 0 || i % 5 ==0 ) {
+		sum += i;
+	}
+}
+console.log(sum);
+
+functions:
+
+function juice(input) {
+	var output ="juice of the " + input;
+	return output;
+	}
+fruit = prompt('Please input your favorite fruit');
+juice(fruit);
+
+var sayHello =function ("input") {
+	var message ='Hello from' + input;
+	return message;
+}
+
+var sum = function(a,b) {return a + b}
+sum(2, 4)
+function square(number) {
+	return number*numner;
+}
+
+
+function sum(a,b){
+	return a + b;
+}
+var number = 1
+var number2 = 2
+console.log(sum(1,2));

@@ -1,0 +1,71 @@
+<html>
+<head>
+  <style type="text/css">
+  #map-canvas {
+    width: 400px;
+    height: 480px;
+  }
+  </style>
+</head>
+<body>
+  <!-- div to hold map -->
+  <div id="map-canvas"></div>
+
+  <!-- Load the Google Maps API [DON'T FORGET TO USE A KEY] -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcpbmyxz17BawCGQ3hX8yKMFzp2Zy9Ua8"></script>
+
+  <!-- Script to show address on map -->
+  <script type="text/javascript">
+
+    // Set our address to geocode
+    var address = '11255 Huebner Rd #212, San Antonio, TX 78230';
+    // var osteria = lat:29.45, lng: -98.5 
+    // Init geocoder object
+    var geocoder = new google.maps.Geocoder();
+
+
+    // Geocode our address
+    geocoder.geocode( { 'address': address}, function(results, status) {
+      // Check for a successful result
+      if (status == google.maps.GeocoderStatus.OK) {
+        // Set our map options
+        var mapOptions = {
+          // Set the zoom level
+          zoom: 19,
+          // This sets the center of the map at our location
+          center: results[0].geometry.location,
+          // Show this map in satellite view
+          mapTypeId: google.maps.MapTypeId.HYBRID
+        }
+        // Render the map
+        var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+      } else {
+        // Show an error message with the status if our request fails
+        alert("Geocoding was not successful - STATUS: " + status);
+      }
+
+
+       var marker = new google.maps.Marker({
+        position: results[0].geometry.location,
+        map: map,
+        animation: google.maps.Animation.Drop,
+        // draggable:true,
+        // icon: image
+      });
+       google.maps.event.addListener(marker, 'click', toggleBounce); 
+       function toggleBounce() {
+        if (marker.getAnimation() != null){
+          marker.setAnimation(null);
+        }else{
+          marker.setAnimation(google.maps.Animation.BOUNCE);
+        }
+       //  console.log(this.getPosition().lat());
+       //  console.log(this.getPosition().lng());
+       };
+      var infowindow = new google.maps.InfoWindow({
+        content: 'Pretzels and Beer'
+      })
+      infowindow.open(map,marker);
+    });
+  </script>
+</body>

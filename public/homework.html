@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script>
+var random = Math.floor(Math.random()*100+1);
+var response = prompt('guess a number between 1- 100');
+	while (response !=random){
+		if (response <random){
+			alert('higher');
+			response=prompt('guess again');
+		}else{
+			alert('lower');
+			response=prompt('guess again');
+		}
+
+	}
+
+
+    
+    
+    alert('congrats you selected the number ' + random );
+
+</script>
+</body>
+</html>
