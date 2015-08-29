@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<style type="text/css">
+    		img {
+			    position: relative;
+			    left: 0;
+			    top: 0;
+			}
+			body{
+				background-image: url(/img/mario.jpg); 
+			}
+
+    	</style>
+    	<title>Super Mario!</title>
+        <link rel='stylesheet' type='text/css' href='stylesheet.css'/>
+		<script type='text/javascript' src='script.js'></script>
+	</head>
+	<body>
+        <img src="http://i1061.photobucket.com/albums/t480/ericqweinstein/mario.jpg"/>
+	</body>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+		    $(document).keydown(function(key) {
+		        switch(parseInt(key.which,10)) {
+					// Left arrow key pressed
+					case 37:
+						$('img').animate({left: "-=10px"}, 'slow');
+						break;
+					// Up Arrow Pressed
+					case 38:
+						$('img').animate({top: "-=20px"}, 'fast');
+						break;
+					// Right Arrow Pressed
+					case 39:
+					$('img').animate({left: "+=20px"}, 'fast');
+						break;
+					// Down Arrow Pressed
+					case 40:
+					$('img').animate({top: "+=20px"}, 'fast');
+						break;
+				}
+			});
+		});
+
+
+
+
+	</script>
+</html>

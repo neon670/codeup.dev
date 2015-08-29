@@ -1,0 +1,45 @@
+@media screen and (min-width:500px) {
+    selector {
+        property: value;
+    }
+}
+@media screen and (min-width:992px){
+	selector {
+		property: #media;
+	}
+.first	{
+	height: 50px;
+	width: 100px;
+	margin: auto;
+	text-align: center;
+	border-radius: 2px;
+	border: 2px dashed;
+
+
+
+}
+
+.two	{
+	border-radius: 2px;
+	border: 2px dashed;
+	width: 50px;
+	height: 90px;
+	text-align: center;
+	margin: auto;
+	
+
+}
+
+a {
+	text-decoration: none;
+	font-family: sans-serif, gardmon;
+	font-weight: bolder;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+
+}
+body {
+
+	background-color: #85cfdf;
+}
