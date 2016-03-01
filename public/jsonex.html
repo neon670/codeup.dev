@@ -1,0 +1,50 @@
+<DOCTYPE <html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h2>JSON Object Creation in JavaScript</h2>
+
+	<p id="demo"></p>
+
+	<a href="https://instagram.com/p/8KNmB1PrJ0/?taken-by=victoriamynguyen" target="blank"><img class="aligncenter size-large wp-image-209" style="float: left; width: 30%; margin-right: 1%; margin-bottom: 0.5em;" src="http://victoriamynguyen.com/wp-content/uploads/2015/06/11875317_940436336015882_1746320353_n-886x1024.jpg" alt="11875317_940436336015882_1746320353_n" width="200" height="350" /></a><a href="https://instagram.com/p/770-0nvrP9/?taken-by=victoriamynguyen" target="blank"><img class="aligncenter size-large wp-image-206" style="float: left; width: 30%; margin-right: 1%; margin-bottom: 0.5em;" src="http://victoriamynguyen.com/wp-content/uploads/2015/09/DSC_3689-1024x684.jpg" alt="DSC_3689" width="200" height="350" /></a>
+
+
+	<h3><a href="http://www.storenvy.com/products/11752650-all-black-everything-8x12" target="_blank"> All Black Everything 8x12 </a></h3>
+Autographed. 
+Size 8x12
+<strong>$12.00</strong>
+
+<h3><a href="http://www.storenvy.com/products/11752650-all-black-everything-20x30" target="_blank"> All Black Everything 20x30 </a></h3>
+Autographed. 
+Size 20x30
+<strong>$25.00</strong>
+
+Photo by: Julian Morales
+<img src="http://d3u67r7pp2lrq5.cloudfront.net/product_photos/27692256/10906441_776725365740976_1921444098600645257_n_original.jpg" alt="" />
+
+<h3><a href="http://www.storenvy.com/products/11752866-feeling-you-8x12" target="_blank"> Feeling You 8x12 </a></h3>
+Autographed. 
+Size 8x12
+<strong>$12.00</strong>
+
+<h3><a href="http://www.storenvy.com/products/11755554-feeling-you-20x30" target="_blank"> Feeling You 20x30 </a></h3>
+Autographed. 
+Size 20x30
+<strong>$25.00</strong>
+
+Photo by: Julian Morales
+<img src="http://dlp2gfjvaz867.cloudfront.net/product_photos/27700314/FullSizeRender_original.jpg" alt="" />
+
+	<script>
+	var text = '{"name":"John Johnson","street":"Oslo West 16","phone":"555 1234567"}';
+
+	var obj = JSON.parse(text);
+
+	document.getElementById("demo").innerHTML =
+	obj.name + "<br>" +
+	obj.street + "<br>" +
+	obj.phone;
+	</script>
+</body>
+</html>

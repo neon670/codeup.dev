@@ -1,0 +1,28 @@
+[vc_row iron_row_type="full_width" iron_remove_padding_medium="" iron_remove_padding_small="" iron_overlay_pattern="" iron_parallax="" iron_bg_video="" iron_bg_repeat="repeat-y" iron_text_scheme="lighter-overlay"][vc_column][rev_slider_vc alias="djbait"][/vc_column][/vc_row][vc_row iron_row_type="in_container" iron_remove_padding_medium="" iron_remove_padding_small="" iron_overlay_pattern="" iron_parallax="" iron_bg_video="" iron_bg_repeat="repeat-y" iron_text_scheme="lighter-overlay" css=".vc_custom_1414101509977{padding-top: 70px !important;padding-bottom: 70px !important;}"][vc_column][vc_column_text css_animation="appear" css=".vc_custom_1406049805960{margin-top: 125px !important;}"]
+<h2 style="text-align: center;"><strong>Latest</strong> Releases</h2>
+[/vc_column_text][vc_empty_space height="70pxpx"][vc_row_inner][vc_column_inner width="1/3"][vc_single_image image="1562" img_size="341x341" onclick="custom_link" css_animation="appear" link="./album/hommeseul/" css=".vc_custom_1406049873230{margin-bottom: 0px !important;}"][vc_column_text css_animation="bottom-to-top"]
+
+<hr />
+
+<h3>Gramaslick '94</h3>
+[/vc_column_text][/vc_column_inner][vc_column_inner width="1/3"][vc_single_image image="1605" img_size="341x341" onclick="custom_link" css_animation="appear" link="./album/tribute-to-amelia/" css=".vc_custom_1406049883407{margin-bottom: 0px !important;}"][vc_column_text css_animation="bottom-to-top"]
+
+<hr />
+
+<h3 style="text-align: left;">Mad Tea Party</h3>
+[/vc_column_text][/vc_column_inner][vc_column_inner width="1/3"][vc_single_image image="632" img_size="341x341" onclick="custom_link" css_animation="appear" link="./album/homepage-compilation/" css=".vc_custom_1406049891597{margin-bottom: 0px !important;}"][vc_column_text css_animation="bottom-to-top"]
+
+<hr />
+
+<h3 style="text-align: left;">Tiger Theater Vol. 2</h3>
+[/vc_column_text][/vc_column_inner][/vc_row_inner][/vc_column][/vc_row][vc_row iron_row_type="in_container" iron_remove_padding_medium="" iron_remove_padding_small="" iron_overlay_pattern="" iron_parallax="" iron_bg_video="" bg_image_repeat="cover" dt_bg_repeat="no-repeat" dt_text_scheme="lighter-overlay" dt_color_opacity="0" iron_bg_repeat="repeat-y" iron_text_scheme="lighter-overlay" css=".vc_custom_1414101548791{padding-bottom: 70px !important;}"][vc_column][vc_column_text css_animation="appear" css=".vc_custom_1406053922844{margin-top: 120px !important;}"]
+<h2 style="text-align: center;"><strong>Listen</strong> Now</h2>
+[/vc_column_text][vc_raw_html]JTNDaWZyYW1lJTIwd2lkdGglM0QlMjIxMDAlMjUlMjIlMjBoZWlnaHQlM0QlMjI0NTAlMjIlMjBzY3JvbGxpbmclM0QlMjJubyUyMiUyMGZyYW1lYm9yZGVyJTNEJTIybm8lMjIlMjBzcmMlM0QlMjJodHRwcyUzQSUyRiUyRncuc291bmRjbG91ZC5jb20lMkZwbGF5ZXIlMkYlM0Z1cmwlM0RodHRwcyUyNTNBJTJGJTJGYXBpLnNvdW5kY2xvdWQuY29tJTJGcGxheWxpc3RzJTJGNzU3MzUlMjZhbXAlM0JhdXRvX3BsYXklM0R0cnVlJTI2YW1wJTNCaGlkZV9yZWxhdGVkJTNEZmFsc2UlMjZhbXAlM0JzaG93X2NvbW1lbnRzJTNEdHJ1ZSUyNmFtcCUzQnNob3dfdXNlciUzRHRydWUlMjZhbXAlM0JzaG93X3JlcG9zdHMlM0RmYWxzZSUyNmFtcCUzQnZpc3VhbCUzRHRydWUlMjIlM0UlM0MlMkZpZnJhbWUlM0U=[/vc_raw_html][/vc_column][/vc_row][vc_row iron_row_type="in_container" iron_remove_padding_medium="" iron_remove_padding_small="" iron_overlay_pattern="" iron_parallax="" iron_bg_video="" dt_bg_repeat="repeat-y" dt_text_scheme="lighter-overlay" dt_row_type="in_container" css=".vc_custom_1414103369531{padding-top: 100px !important;padding-bottom: 70px !important;}"][vc_column width="1/4"][vc_column_text css_animation="appear"]
+<h2 style="text-align: center;">Twitter <strong>Feed</strong></h2>
+[/vc_column_text][iron_twitter screen_name="@DJBAIT" action_title="Follow Me @DJBAIT" action_ext_link="https://twitter.com/djbait" css_animation="wpb_animate_when_almost_visible wpb_appear"][/vc_column][vc_column width="3/4"][vc_column_text css_animation="appear"]
+<h2 style="text-align: center;"><strong>Upcoming</strong> Events</h2>
+[/vc_column_text][iron_events number="2" filter="upcoming" action_title="+ View all events" action_obj_id="734" css_animation="wpb_animate_when_almost_visible wpb_appear"][/vc_column][/vc_row][vc_row iron_row_type="in_container" iron_remove_padding_medium="" iron_remove_padding_small="" iron_overlay_pattern="" iron_parallax="" iron_bg_video="" dt_bg_repeat="repeat-y" dt_text_scheme="lighter-overlay" dt_row_type="in_container" css=".vc_custom_1414103249825{padding-top: 70px !important;padding-bottom: 70px !important;}"][vc_column][vc_column_text css_animation="appear"]
+<h2 style="text-align: center;"><strong>Videos</strong></h2>
+[/vc_column_text][iron_recentvideos number="2" view="video_grid" css_animation="wpb_animate_when_almost_visible wpb_appear" category="5,6"][/vc_column][/vc_row][vc_row iron_row_type="full_width" iron_remove_padding_medium="" iron_remove_padding_small="" iron_overlay_pattern="" iron_parallax="" iron_bg_video="" dt_bg_repeat="repeat-y" dt_text_scheme="lighter-overlay" dt_row_type="in_container" iron_bg_repeat="repeat-y" iron_text_scheme="lighter-overlay" css=".vc_custom_1414103263714{padding-top: 70px !important;padding-bottom: 70px !important;}"][vc_column][vc_column_text css_animation="appear"]
+<h2 style="text-align: center;"><strong>Instagram</strong>Photos</h2>
+[/vc_column_text][iron_featuredphotos albums="620" gallery_layout="custom_height" gallery_height="540" action_title="+ View all photos" action_obj_id="265" css_animation="wpb_animate_when_almost_visible wpb_appear"][rev_slider_vc alias="djbaitig"][/vc_column][/vc_row]

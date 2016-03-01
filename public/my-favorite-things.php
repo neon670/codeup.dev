@@ -1,5 +1,5 @@
 <?php
-	$favoriteThings = ['racquetball', 'food', 'tennis', 'coding', 'yoga'];
+	$favoriteThings = ['racquetball', 'food', 'tennis', 'coding', 'yoga','soccer','web design'];
 ?>
 
 
