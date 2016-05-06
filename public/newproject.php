@@ -20,6 +20,7 @@
 <strong>This is the begginning</strong>
 <div class="modal">
 	<div class="modal-content">
+		<td>somehtin</td>
 	</div>
 	<button role ="button" class ="modal=close">close</button>
 </div>

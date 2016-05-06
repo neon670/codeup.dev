@@ -54,10 +54,13 @@
 		position: relative;
 		left: 700px;
 	}
-	/*.box{
-		left: -500px;
+	#droppable{
+		height: 200px;
+		width: 300px;
+		border: 1px solid black;
+		margin-top: 150px;
+		margin-left: 300px;
 	}
-*/
 
 </style>
 <head>
@@ -228,6 +231,10 @@
 		  <p>This is the default dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
 		</div>
 	<div>
+
+		<div id="droppable" class="ui-widget-header">
+  			<p>Drop here</p>
+		</div>
 </body>
 
 	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
@@ -272,8 +279,18 @@
  				+ '- $' +$range.slider('values', 1));
  	});
  	$(function(){
- 		$( "#draggable" ).draggable();
+ 		$( "#draggable" ).draggable({ helper: 'clone' });
  	});
+ 	$( "#droppable" ).droppable({
+      drop: function( event, ui ) {
+        $( this )
+          .addClass( "ui-state-highlight" )
+          .find( "p" )
+            .html( "Dropped!" );
+            ui.draggable.clone().appendTo($(this)).draggable();
+      }
+    });
+
  	$(function(){
  		$('#para').click();
  	});
