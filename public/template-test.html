@@ -28,6 +28,7 @@
         {{ num }} is even!
     </li>
 </ul>
+
 <form novalidate>
     <label for="first_name">First Name</label>
     <input type="text" id="first_name" ng-model="user.firstName" maxlength="50" required>
@@ -41,6 +42,9 @@
     <label for="password">Password</label>
     <input type="password" id="password" ng-model="user.password" minlength="6" required>
 </form>
-
+<div>
+    Welcome: {{ user.firstName }} {{ user.lastName }}<br>
+    We will send a confirmation eMail to: {{ user.email }}
+</div>
 </body>
 </html>

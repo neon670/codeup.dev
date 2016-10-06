@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html ng-app>
+<head>
+     <title>design your card</title>
+     <meta charset="utf-8">
+     <style type="text/css">
+     [ng-cloak] {
+          display: none !important;
+     }
+     </style>
+     <link rel="stylesheet" type="text/css" href="css/modelTest.css">
+</head>
+
+<body ng-cloak>
+     <script type="text/javascript" src="/js/angular.min.js"></script>
+     <script type="text/javascript" src="/js/modelTest.js"></script>  
+     <div class="container">	
+
+          <!-- begin form -->
+          <section class="row one-half">
+               <form novalidate id="contactCardForm" action="model-test.html">
+                    <div class="name-and-communication one-half offset-one-third">
+                         <p id="required">* indicates required</p>
+                    
+                         <input id="firstName" name="firstName" type="text" ng-model="user.firstName" placeholder="* First Name">
+                    
+                         <input id="lastName" name="lastName" type="text" ng-model="user.lastName" placeholder="* Last Name">
+                   
+                         <input id="email" name="email" type="email" ng-model="user.email" placeholder="* Email">
+                 
+                         <input id="github" name="github" type="url" ng-model="user.github" placeholder="* Github Link">
+                   
+                    </div>
+                    <div class="row one-half offset-one-third">
+                         <!-- add date picker plugin -->
+                         <label for"dateOfBirth">What Day Were You Born?</label>
+                         <input id="dateOfBirth" name="dateOfBirth" type="date" ng-model="user.dateOfBirth" placeholder="mm/dd/yyyy">
+                    </div>
+
+                    <div class="row one-half offset-one-third">
+                         <label for"imageList">Choose Your Favorite Sport</label>
+                         <select id="image" name="contactCard" ng-model="user.image">
+                              <option value=""></option>
+                              <option value="/img/codeup-arrow.png">Codeup</option>
+                              <option value="/img/osocute.jpg">Oso</option>
+                              <option value="/img/mario1.png">Mario</option>
+                         </select>
+                    </div>
+               </form>
+          </section>
+               <!-- end of form -->
+
+               <!-- begin dislay of contact info card -->
+          <section class="row one-half">
+               <div class="displayCard one-half offset-one-third">
+                    <div class="cardBox ">
+                         <div class="displayImage">
+                              <img ng-src="{{ user.image }}">
+                              <!-- uppercase, lowercase and date are Angular filters to ensure output formatting of user inputs -->
+                              <p class="displayName"> {{ user.firstName | uppercase }} {{ user.lastName | uppercase }} </p>
+                              <p class="displayEmail"> {{ user.email }} </p>
+                              <p class="displayBirth"> {{ user.dateOfBirth | date }} </p>
+                              <p class="displayGithub"> {{ user.github | lowercase }} </p>
+                         </div>
+                    </div>
+               </div>
+          </section>
+          <!-- end display of contact info card -->
+     </div>
+</body>
+</html>

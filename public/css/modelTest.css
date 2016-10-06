@@ -1,0 +1,65 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+    font-family: Georgia, serif;
+    /*font-size: 2 em;*/
+    /* font size not displaying as increased with em */
+    font-size: large;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+label {
+	width: 100px;
+}
+
+.container {
+    margin: auto;
+    max-width: 1200px;
+}
+
+.row {
+    width: 100%;
+    /* max is 1200 px, not full view screen */
+}
+
+.one-half {
+    width: 50%;
+}
+
+.offset-one-fourth {
+    margin-left: 25%;
+}
+
+.name-and-communication {
+
+}
+
+#dateOfBirth {
+	display: block;
+}
+
+/* TODO: Improve positioning */
+#image {
+	display: block;
+}
+
+/* displayed address card from user data */
+p {
+	text-align: center;
+	padding-bottom: 0px;
+}
+
+#required {
+    width: 75%;
+}
+
+/* if field inputs are given invalid class by Angular */
+input.ng-invalid {
+    background-color: pink;
+}
