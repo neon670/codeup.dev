@@ -239,7 +239,7 @@
 	   $( "#dialog" ).dialog();
 	 	});
 	  $(function(){
-	  	$('#dialog').animate({left:0});
+	  	$('#dialog').animate({left:5});
 	  })
 
 	  $(function() {
