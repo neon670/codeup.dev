@@ -12,7 +12,7 @@ function pageController()
     $data = array();
 
     // Add data to be used in the html view.
-    $data['message'] = 'Hello Codeup!';
+    $data['message'] = 'Hello!';
     $data['date'] = date('Y-m-d');
     $data['noun'] = 'Zombie';
 

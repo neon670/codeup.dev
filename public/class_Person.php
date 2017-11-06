@@ -62,11 +62,23 @@ class Person
         $this->lastName  = $lastName;
     }
 
+
     public function fullName()
     {
         return $this->firstName . ' ' . $this->lastName;
     }
+     public function __destruct(){
+        echo 'deconstruct';
+    }
 }
+
+
+    $user = new Person('Noe', 'Nevarez');
+    echo $user->firstName .''. $user->lastName;
+    echo'<br>';
+
+
+
 class Superhero extends Person
 {
     public $pseudonym;
@@ -87,6 +99,8 @@ $superman->pseudonym = 'Superman';
 $superman->capeColor = 'red';
 
 echo $superman->alterEgo();
+// echo $superman->capeColor();
+
 var_dump($superman->hasCape());
 
 

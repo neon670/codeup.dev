@@ -46,7 +46,7 @@
             <label for="sender">From:</label>
             <input id="sender" name="sender" type="text">
         </p>
-            <input type="checkbox" id="mailing name="mailing" value="compose email">
+            <input type="checkbox" id="mailing" name="mailing" value="compose email">
             <label for="mailing"> Save a copy in your sent folder</label>
         
 

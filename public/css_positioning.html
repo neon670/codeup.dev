@@ -62,7 +62,13 @@
 	background-color: #df8bf0;
 
 	}
-	
+	#grad {
+  background: red; /* For browsers that do not support gradients */
+  background: -webkit-radial-gradient(circle, red, yellow, green); /* Safari */
+  background: -o-radial-gradient(circle, red, yellow, green); /* Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(circle, red, yellow, green); /* Firefox 3.6 to 15 */
+  background: radial-gradient(circle, red, yellow, green); /* Standard syntax */
+}
 	img{
 		float: left;
  		margin-right: 60px;
@@ -108,7 +114,38 @@
 		<img src="img/codeup-arrow.png" id="arrow">
 		<img src="img/codeup-arrow.png" id="arrow">
 	</div>
-	
+	<div style="width:200px; height: 200px; padding-left:200px; margin-left:200px;" id="grad">
+	</div>
 	
 </body>
 <html>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
+ <script>
+function demoFromHTML() {
+        $("td:hidden,th:hidden","#tab_content").show();
+    var pdf = new jsPDF('landscape', 'pt', 'a4');
+              pdf.text(20, 20, 'X2 Pay ');  
+     pdf.cellInitialize();
+    pdf.setFontSize(10);
+    $.each( $('#content tr'), function (i, row){
+        $.each( $(row).find("td, th"), function(j, cell){
+             var txt = $(cell).text().trim().split(" ").join("\n") || " ";
+             var width = (j==0) ? 70 : 65; //make with column smaller
+             //var height = (i==0) ? 40  30;
+             pdf.cell(10, 50, width, 50, txt, i);
+        });
+    });
+        pdf.save('AccountofStatement.pdf');
+
+} 
+
+
+<script>
+function myFunction() {
+    window.print();
+}
+</script>

@@ -58,8 +58,28 @@ $page =1;
 <DOCTYPE html>
 <head>
 	<title>NATIONAL PARKS</title>
+	<link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+	<link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.4.2/css/buttons.dataTables.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+	<script src= "https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src= "https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.4.2/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.32/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.32/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.4.2/js/buttons.html5.min.js"></script>
+    <script type="text/javascript">
+	$('#example').DataTable( {
+    dom: 'Bfrtip',
+    buttons: [
+        'colvis',
+        'excel',
+        'print'
+    ]
+} );
+	</script>
+
 	<style type="text/css">
 	body{
 		background-color: #c3f4ee;
@@ -99,7 +119,8 @@ $page =1;
 </head>
 <body>
 <h1>National Parks</h1><br>
-<div class="parks">
+
+<div class="display" id="example" cellspacing="0" width="100%">
 <table class ="table table-striped">
 
 	<tr>
@@ -150,6 +171,8 @@ $page =1;
 			</form>
 </div>
 &copy;Noe<?php echo date('Y');?>
+
+
 
 <script src="//code.jquery.com/jquery-1.10.2.js"></script>
 <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>

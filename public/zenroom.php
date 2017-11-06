@@ -17,7 +17,7 @@
 		</tr>
 		<tr>
 			<?php echo ($rooms as $room) ?>
-			<td class="date"><Double Room</td>
+			<td class="date">Double Room</td>
 			<td>Rooms Available</td>
 			<!-- <td>Double room with bfreakfast</td> -->
 		</tr>

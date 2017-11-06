@@ -26,8 +26,10 @@ class Datastore
 }
 
 $ds = new Datastore();
-$ds->name = 'Arthur Dent';
-$ds->group = 'Codeup';
+$ds->name = 'Arthur Dent<br>';
+$ds->group = 'Codeup<br>';
 $ds->age = 42;
 
-echo $ds->group;
+echo "group: ". '' .$ds->group;
+echo "name: ". '' .$ds->name;
+echo "age: ". '' .$ds->age;
