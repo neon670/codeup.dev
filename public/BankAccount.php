@@ -4,7 +4,7 @@
 		protected $Balance = 0;
 		public $APR;
 		public $SortCode;
-		public FirstName;
+		public $FirstName;
 		public $LastName;
 		public $Audit;
 		public $Audit = array();
